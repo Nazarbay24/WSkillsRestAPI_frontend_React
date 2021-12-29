@@ -1,0 +1,77 @@
+#session_detail {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 2%;
+  width: 96%;
+  background: #fff;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  border-radius: 10px;
+}
+#session_detail:after {
+  position: absolute;
+  content: "";
+  bottom: -60px;
+  height: 60px;
+  width: 1px;
+}
+#session_title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: #7226ed;
+}
+#session_description {
+  font-size: 18px;
+}
+#session_info {
+  display: flex;
+  margin-top: 30px;
+  font-size: 17px;
+}
+#session_info_insert {
+  font-size: 17px;
+}
+#close_btn {
+  position: absolute;
+  right: 25px;
+  top: 5px;
+  font-size: 36px;
+  color: #212529;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  #session_detail * {
+    font-size: 38px;
+  }
+  #session_title {
+    font-size: 48px;
+  }
+  #close_btn {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  #session_detail {
+    padding: 20px;
+  }
+  #session_detail * {
+    font-size: 18px;
+  }
+  #session_title {
+    font-size: 24px;
+  }
+  #close_btn {
+    font-size: 35px;
+  }
+  #session_info > span > span {
+    font-weight: 500;
+  }
+  #session_info > span > span:after {
+    content: " ";
+    display: block;
+  }
+}

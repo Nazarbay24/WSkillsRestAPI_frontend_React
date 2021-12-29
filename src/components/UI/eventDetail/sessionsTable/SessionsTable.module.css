@@ -1,0 +1,98 @@
+#table_container {
+  margin-top: 70px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+#sessions_table {
+  width: 1300px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+#sessions_table td {
+  border: 1px solid #007bff;
+  padding: 10px;
+}
+#time9 {
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+#time11 {
+  position: absolute;
+  left: 250px;
+  top: 0;
+}
+#time13 {
+  position: absolute;
+  left: 490px;
+  top: 0;
+}
+#time15 {
+  position: absolute;
+  left: 730px;
+  top: 0;
+}
+#time17 {
+  position: absolute;
+  left: 970px;
+  top: 0;
+}
+.channel_name,
+.rooms_name {
+  font-size: 15px;
+}
+.rooms_name > div {
+  margin-bottom: 10px;
+}
+.session {
+  border: 2px solid;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  height: 25px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.session:hover {
+  transform: scale(1.1);
+}
+.registered {
+  border-color: #2de627;
+}
+.session_div {
+  position: relative;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  #sessions_table * {
+    font-size: 28px;
+  }
+  #sessions_table thead * {
+    font-size: 36px;
+  }
+  #sessions_name > div:first-child {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  #table_container {
+    margin-top: 25px;
+  }
+  #sessions_table * {
+    font-size: 17px;
+  }
+  #sessions_table thead * {
+    font-size: 21px;
+  }
+  #sessions_name > div:first-child {
+    margin-bottom: 10px;
+  }
+}

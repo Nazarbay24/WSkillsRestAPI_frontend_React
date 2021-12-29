@@ -1,0 +1,86 @@
+.cssload_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%), translateY(-50%);
+}
+
+.cssload_whirlpool,
+.cssload_whirlpool::before,
+.cssload_whirlpool::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid rgb(255, 239, 176);
+  border-left-color: rgb(110, 158, 255);
+  border-radius: 1748px;
+  -o-border-radius: 1748px;
+  -ms-border-radius: 1748px;
+  -webkit-border-radius: 1748px;
+  -moz-border-radius: 1748px;
+}
+
+.cssload_whirlpool {
+  margin: -44px 0 0 -44px;
+  height: 88px;
+  width: 88px;
+  animation: cssload-rotate 900ms linear infinite;
+  -o-animation: cssload-rotate 900ms linear infinite;
+  -ms-animation: cssload-rotate 900ms linear infinite;
+  -webkit-animation: cssload-rotate 900ms linear infinite;
+  -moz-animation: cssload-rotate 900ms linear infinite;
+}
+
+.cssload_whirlpool::before {
+  content: "";
+  margin: -40px 0 0 -40px;
+  height: 77px;
+  width: 77px;
+  animation: cssload-rotate 900ms linear infinite;
+  -o-animation: cssload-rotate 900ms linear infinite;
+  -ms-animation: cssload-rotate 900ms linear infinite;
+  -webkit-animation: cssload-rotate 900ms linear infinite;
+  -moz-animation: cssload-rotate 900ms linear infinite;
+}
+
+.cssload_whirlpool::after {
+  content: "";
+  margin: -51px 0 0 -51px;
+  height: 98px;
+  width: 98px;
+  animation: cssload-rotate 1800ms linear infinite;
+  -o-animation: cssload-rotate 1800ms linear infinite;
+  -ms-animation: cssload-rotate 1800ms linear infinite;
+  -webkit-animation: cssload-rotate 1800ms linear infinite;
+  -moz-animation: cssload-rotate 1800ms linear infinite;
+}
+
+@keyframes cssload-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes cssload-rotate {
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes cssload-rotate {
+  100% {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes cssload-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes cssload-rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}

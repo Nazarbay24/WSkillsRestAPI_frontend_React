@@ -1,0 +1,104 @@
+#event_detail {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 50px;
+  border-radius: 0.45rem;
+  box-shadow: 0 7px 15px rgb(0 0 0 / 20%);
+}
+
+#event_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#event_header h2 {
+  color: #007bff;
+  font-size: 28px;
+}
+#event_header button {
+  cursor: pointer;
+  font-size: 1.05rem;
+  color: #6c757d;
+  border: 1px solid transparent;
+  padding: 0.45rem 1.2rem;
+  border-radius: 0.35rem;
+  background: transparent;
+  border-color: #6c757d;
+  transition: all 0.15s ease-in-out;
+}
+#event_header button:hover {
+  color: #fff;
+  background: #6c757d;
+}
+
+#registered {
+  color: green;
+  font-size: 25px;
+  display: block;
+}
+
+.successMessage {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  background: #71e244;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  padding: 15px 30px;
+  transition: all 0.8s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.successMessage_enter {
+  top: -250px;
+}
+.successMessage_enterActive {
+  top: 20px;
+}
+.successMessage_exit {
+  top: 20px;
+}
+.successMessage_exitActive {
+  top: -250px;
+}
+
+@media (max-width: 1024px) {
+  #event_header h2 {
+    font-size: 40px;
+  }
+  .successMessage {
+    top: 60px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  #event_detail {
+    padding: 20px;
+    margin: 15px;
+    margin-bottom: 50px;
+  }
+  #event_header h2 {
+    font-size: 8vw;
+    line-height: 8.5vw;
+    text-align: center;
+  }
+  #event_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #event_header button {
+    line-height: 8.5vw;
+    margin-top: 5vw;
+  }
+
+  .successMessage {
+    top: 15px;
+    font-size: 7vw;
+    text-align: center;
+  }
+}

@@ -1,0 +1,25 @@
+.myBtn {
+  padding: 5px 40px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+.disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+@media (max-width: 1024px) {
+  .myBtn {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 500px) {
+  .myBtn {
+    font-size: 6vw;
+    margin-top: 13px;
+  }
+}

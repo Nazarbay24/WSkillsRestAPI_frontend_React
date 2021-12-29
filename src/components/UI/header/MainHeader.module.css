@@ -1,0 +1,50 @@
+#header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #636363;
+  padding: 0.7rem;
+}
+#header > h1 > a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #212529;
+}
+#username {
+  color: #212529;
+  margin-right: 35px;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  #username {
+    display: block;
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    padding: 10px 0 20px 0;
+  }
+  #header > h1 {
+    font-size: 7.5vw;
+  }
+  #username {
+    display: inline;
+    font-size: 22px;
+    margin-top: 15px;
+    color: #888;
+  }
+  #header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+}

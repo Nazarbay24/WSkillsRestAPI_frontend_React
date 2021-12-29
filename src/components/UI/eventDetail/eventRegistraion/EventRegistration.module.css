@@ -1,0 +1,217 @@
+#registration_block {
+  display: block;
+  position: absolute;
+  border-radius: 0.45rem;
+  top: 30px;
+  left: 2%;
+  width: 96%;
+  background: #fff;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+}
+#registration_block:after {
+  position: absolute;
+  content: "";
+  bottom: -60px;
+  height: 60px;
+  width: 1px;
+}
+#event_name {
+  color: #007bff;
+  font-size: 28px;
+}
+#tickets_list {
+  margin-top: 30px;
+  display: flex;
+}
+#workshops {
+  font-size: 19px;
+  margin-top: 30px;
+}
+#workshops_list {
+  margin-top: 25px;
+  color: #222;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#workshops_list input {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#workshops_list > label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#close_btn {
+  position: absolute;
+  right: 25px;
+  top: 0px;
+  font-size: 36px;
+  cursor: pointer;
+  color: #636363;
+}
+
+#cost_container {
+  margin-top: 0px;
+  float: right;
+  font-size: 19px;
+}
+#ticket_cost {
+  float: right;
+  margin-left: 25px;
+}
+#workshops_cost {
+  float: right;
+  margin-left: 25px;
+}
+#cost_line {
+  width: 110%;
+  margin: 8px 0 5px -5%;
+  height: 1px;
+  background: #000;
+}
+#total_cost {
+  float: right;
+  margin-left: 25px;
+  font-weight: bold;
+}
+#purchase_btn {
+  margin-top: 30px;
+  float: right;
+  background: #48c248;
+}
+
+.ticket {
+  height: 100px;
+  width: 300px;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 2px 0 0 0 #555, 0 2px 0 0 #555, 2px 2px 0 0 #555, 2px 0 0 0 #555 inset, 0 2px 0 0 #555 inset;
+}
+.ticket > div > span:last-child {
+  color: #333;
+}
+.ticket > input {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.unavailable {
+  opacity: 0.4;
+  cursor: default;
+}
+.unavailable > input {
+  opacity: 1;
+  cursor: default;
+}
+
+@media (max-width: 1024px) {
+  #event_name {
+    font-size: 44px;
+  }
+
+  #tickets_list {
+    flex-wrap: wrap;
+  }
+  .ticket {
+    height: 150px;
+    width: 450px;
+    font-size: 30px;
+  }
+  .ticket > input {
+    width: 45px;
+    height: 45px;
+    margin-right: 30px;
+  }
+
+  #workshops {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  #workshops_list input {
+    width: 30px;
+    height: 30px;
+  }
+
+  #cost_container {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  #close_btn {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  #registration_block {
+    padding: 20px;
+  }
+  #event_name {
+    font-size: 8vw;
+  }
+
+  #tickets_list {
+    flex-wrap: wrap;
+  }
+  .ticket {
+    height: 95px;
+    width: 300px;
+    font-size: 5.5vw;
+    padding: 15px;
+  }
+  .ticket > input {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  #workshops {
+    font-size: 5.5vw;
+    margin-top: 25px;
+  }
+  #workshops_list input {
+    width: 15px;
+    height: 15px;
+  }
+
+  #cost_container {
+    font-size: 6vw;
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #cost_container > div {
+    width: 100%;
+  }
+
+  #close_btn {
+    font-size: 35px;
+    right: 15px;
+  }
+
+  #mobile_workshop_cost {
+    display: none;
+  }
+  #purchase_btn {
+    float: none;
+  }
+}
