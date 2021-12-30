@@ -28,7 +28,7 @@ function SessionDetail({channels, sessionClose}) {
         <div id={classes.session_title}>{session.title}</div>
         <div id={classes.session_description}>{session.description}</div>
         <div id={classes.session_info}>
-          <span style={{marginRight: "15px", fontWeight: "500", color: "#7226ed"}}>
+          <span style={{marginRight: "15px", fontWeight: "400", color: "#7226ed"}}>
             Speaker:
             <br />
             <span>Start:</span>

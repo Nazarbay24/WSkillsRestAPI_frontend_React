@@ -16,8 +16,8 @@ function Ticket({ticket, fetchTicketId, setFetchTicketId, setTicketCost}) {
     <label className={ticket.available ? css.ticket : css.ticket + " " + css.unavailable}>
       <input type="checkbox" onChange={e => selectTicket(e.target.checked)} checked={fetchTicketId == ticket.id} disabled={ticket.available ? false : true} />
       <div style={{width: "100%"}}>
-        <span style={{fontWeight: 500}}>{ticket.name}</span>
-        <span style={{fontWeight: 500, float: "right"}}>{ticket.cost}</span>
+        <span style={{fontWeight: 400}}>{ticket.name}</span>
+        <span style={{fontWeight: 400, float: "right"}}>{ticket.cost}</span>
         <br />
         <span>{ticket.available ? ticket.description : "unavailable"}</span>
       </div>

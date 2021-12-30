@@ -19,7 +19,7 @@
 #session_title {
   font-size: 28px;
   margin-bottom: 30px;
-  font-weight: 500;
+  font-weight: 400;
   color: #7226ed;
 }
 #session_description {
@@ -68,7 +68,7 @@
     font-size: 35px;
   }
   #session_info > span > span {
-    font-weight: 500;
+    font-weight: 400;
   }
   #session_info > span > span:after {
     content: " ";

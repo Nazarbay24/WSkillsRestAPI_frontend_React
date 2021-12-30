@@ -107,7 +107,7 @@ function EventRegistraion({event, close, setSuccessMessage}) {
             </div>
             <div id={css.cost_line}></div>
             <div>
-              <span style={{fontWeight: "bold"}}>Total:</span>
+              <span style={{fontWeight: 500}}>Total:</span>
               <span id={css.total_cost}>{totalCost}</span>
             </div>
           </div>

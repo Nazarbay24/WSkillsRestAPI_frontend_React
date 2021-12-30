@@ -81,7 +81,7 @@
 #total_cost {
   float: right;
   margin-left: 25px;
-  font-weight: bold;
+  font-weight: 500;
 }
 #purchase_btn {
   margin-top: 30px;
