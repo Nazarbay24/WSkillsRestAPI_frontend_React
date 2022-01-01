@@ -6,4 +6,6 @@
 
 Backend тут: https://github.com/Nazarbay24/WSkilssRestAPI_Backend_PHP_adminPanel
 
+сам приложение: http://wskills-react-frontend.nurbeklu.beget.tech
+
 этот же фронтэнд только на чистом Javascript: https://github.com/Nazarbay24/WSkillsRestAPI_frontend_Vanilla-JS
